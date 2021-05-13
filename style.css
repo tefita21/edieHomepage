@@ -4,9 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
-
+*::selection{
+    background-color: lightgray;
+}
 /* HEADER */
 header{    
     display: flex;
@@ -31,10 +32,13 @@ header h1{
     font-family: 'Poppins', sans-serif;   
     font-weight: 500;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 28px;
     color: #333333;
     text-decoration: none;
     margin:0 2%;
+}
+.nav-item:hover{
+    opacity: 70%;   
 }
 header span{
     visibility: hidden;
@@ -117,7 +121,6 @@ header span{
    margin: 3% 0 3% 5%;
    width: 90%;   
 }
-
 .email-input form button{
     width: 37%;
     height:37px;
@@ -132,7 +135,6 @@ header span{
     font-size: 18px;
     line-height: 27px;
     color: #f2f2f2;
-
 }
 .email-input form button:hover{
     opacity: 70%;
@@ -205,8 +207,7 @@ header span{
     font-weight: bold;
     font-size: 24px;
     line-height: 36px;
-    color:#333333;
-    
+    color:#333333;    
 }
 .curse-item p{
     font-family: 'Poppins', sans-serif;  
@@ -289,8 +290,7 @@ header span{
     font-family: 'Poppins', sans-serif;     
     font-weight: 500;
     font-size: 24px;    
-    color: #2D9CDB;
-    
+    color: #2D9CDB;    
 }
 /* SECTION 4 */
 .section-4{
@@ -403,8 +403,7 @@ header span{
 footer{
     background-color: #100E1D;
     width: 100%;
-    padding-right: 5%;
-    
+    padding-right: 5%;    
 }
 .footer-container{
     display: flex;
@@ -421,8 +420,10 @@ footer{
     font-size: 18px;
     line-height:36px;
     color: #ffffff;
-    text-decoration: none;
-    
+    text-decoration: none;    
+}
+.footer-1 a:hover{
+    opacity: 70%;
 }
 .footer-2{
     width: 17%;
@@ -434,12 +435,15 @@ footer{
     line-height: 53px;
     color: #F2F2F2;
 }
-.footer-2 i{
+.footer-2 a i{
     color: #F2F2F2;
     font-size: 24px;
     margin-right: 3%;
-
 }
+.footer-2 a i:hover{
+opacity: 70%;
+}
+
 .created-by{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -621,6 +625,7 @@ header span{
 .footer-1{
     width: 90%;   
 }
+
 .footer-2{
     margin-top: 20%;
     width: 100%;
